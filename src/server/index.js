@@ -4,6 +4,9 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
 
+// implementing the css package styled - components 
+const styledComponents = require(styled-components);
+
 const app = express();
 
 const PORT = process.env.PORT || 3000;
