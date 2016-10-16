@@ -25632,19 +25632,19 @@
 							{ href: '#/' },
 							'All'
 						),
-						' ',
+						'\xA0',
 						_react2.default.createElement(
 							'a',
 							{ href: '#/active' },
 							'Active'
 						),
-						' ',
+						'\xA0',
 						_react2.default.createElement(
 							'a',
 							{ href: '#/completed' },
 							'Completed'
 						),
-						' '
+						'\xA0'
 					)
 				);
 			}
