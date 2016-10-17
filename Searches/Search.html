@@ -12,11 +12,11 @@
 
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		
-		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="search.css">
 
-		<title>Index Page</title>
+	<title>Index Page</title>
 	</head>
-<body>
+	<body>
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 	    	<div class="navbar-header">
@@ -34,29 +34,49 @@
 		</div>
 	    </div>
   	</nav>
-
   	<div class="container">
 	  <ul class="nav nav-tabs">
 	    <li class="active"><a data-toggle="tab" href="#home">Flights</a></li>
 	    <li><a data-toggle="tab" href="#menu1">Accommodations</a></li>
 	    <li><a data-toggle="tab" href="#menu2">Things To Do</a></li>
 	  </ul>
-
 	  <div class="tab-content">
 	    <div id="home" class="tab-pane fade in active">
-	      <h3>Flights</h3>
-	      <form>
+	      <h3>Search Flights</h3>
+	      	<form>
 			  <div class="form-group">
-			  	<input type="radio" name="gender" value="male"> One Way
-			  	<input type="radio" name="gender" value="male"> Roundtrip
-			  	<input type="radio" name="gender" value="male"> Multi City<br>
+			  	<input type="radio"> One Way
+			  	<input type="radio"> Roundtrip
+			  	<input type="radio"> Multi City
 			  	<br>
-			    <label for="exampleInputEmail1">From</label>
-			    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Departure City">
+			  	<br>
+			  <div>
+			    <label>From</label>
+			    <input type="string" class="form-control" placeholder="Airport Name">
 			  </div>
 			  <div class="form-group">
-			    <label for="exampleInputPassword1">To</label>
-			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Destination City">
+			    <label>To</label>
+			    <input type="string" class="form-control" placeholder="Airport Name">
+			  </div>
+			  <div class="form-group">
+			    <label>Outbound Date</label>
+			    <input type="string" class="form-control" placeholder="DD/MM/YYYY">
+			  </div>
+			  <div class="form-group">
+			    <label>Inbound Date</label>
+			    <input type="string" class="form-control" placeholder="DD/MM/YYYY">
+			  </div>
+			  <div class="form-group">
+			    <label>Country</label>
+			    <input type="string" class="form-control">
+			  </div>
+			  <div class="form-group">
+			    <label>Currency</label>
+			    <input type="string" class="form-control">
+			  </div>
+			  <div class="form-group">
+			    <label>Locale</label>
+			    <input type="string" class="form-control">
 			  </div>
 				  <form>
 				    <div class="form-group">
@@ -94,40 +114,49 @@
 				      <br>
 				    </div>
 				  </form>
-				    <div class='col-md-5'>
-				        <div class="form-group">
-				            <div class='input-group date' id='datetimepicker6'>
-				                <input type='text' class="form-control" />
-				                <span class="input-group-addon">
-				                    <span class="glyphicon glyphicon-calendar"></span>
-				                </span>
-				            </div>
-				        </div>
-				    </div>
-				    <div class='col-md-5'>
-				        <div class="form-group">
-				            <div class='input-group date' id='datetimepicker7'>
-				                <input type='text' class="form-control" />
-				                <span class="input-group-addon">
-				                    <span class="glyphicon glyphicon-calendar"></span>
-				                </span>
-				            </div>
-				        </div>
-				    </div>
-					</div>
-			  <button type="submit" class="btn btn-default">Check Availability</button>
+				   <button type="submit" class="btn btn-default">Check Availability</button>
+			</div>
+		</form>
+	   	<div id="menu1" class="tab-pane fade">
+	      	<h3>Search Accommodations</h3>
+		  	 <form>
+			  <div class="form-group">
+			    <label">Going To</label>
+			    <input type="string" class="form-control">
+			  </div>
+			  <div class="form-group">
+			    <label>Check In</label>
+			    <input type="date" class="form-control">
+			  </div>
+			  <div class="form-group">
+			    <label>Check Out</label>
+			    <input type="date" class="form-control">
+			  </div>
+			  <button type="submit" class="btn btn-default">Search</button>
 			</form>
-	    <div id="menu1" class="tab-pane fade">
-	      <h3>Accommodations</h3>
-	    </div>
-	    <div id="menu2" class="tab-pane fade">
-	      <h3>Things To Do</h3>
-	      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+		</div>
+			<div id="menu2" class="tab-pane fade">
+	    	<h3>Search Things To Do</h3>
+	    	<form>
+			  <div class="form-group accomm">
+			    <label>Destination</label>
+			    <input type="string" class="form-control" placeholder="Destination">
+			  </div>
+			  <div class="form-group">
+			    <label>From</label>
+			    <input type="date" class="form-control">
+			  </div>
+			  <div class="form-group">
+			    <label>To</label>
+			    <input type="date" class="form-control">
+			  </div>
+			  <button type="submit" class="btn btn-default">Search</button>
+			</form>
 	    </div>
 	  </div>
 	</div>
-</body>
-</html>
+	</div>
+
 <script type="text/javascript">
 	$(function () {
 	$('#datetimepicker6').datetimepicker({
@@ -143,6 +172,8 @@
 	});
 	});
 </script>
+</body>
+</html>
 <!-- <div class="col-lg-6">
     <p>Flight Search</p>
     <div class="input-group">
