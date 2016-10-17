@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
 const morgan = require('morgan');
-const mongoose = require('mongoose');
 
 // implementing the css package styled - components 
 const styled = require('styled-components');
