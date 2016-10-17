@@ -3,9 +3,11 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
+const morgan = require('morgan');
+const mongoose = require('mongoose');
 
 // implementing the css package styled - components 
-const styledComponents = require('styled-components');
+const styled = require('styled-components');
 
 const app = express();
 
