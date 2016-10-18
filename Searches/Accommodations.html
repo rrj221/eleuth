@@ -14,9 +14,7 @@
 		
 		<link rel="stylesheet" type="text/css" href="search.css">
 
-		<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
-
-	<title>Flights Search</title>
+	<title>Accommodations Search</title>
 	</head>
 	<body>
 	<nav class="navbar navbar-default">
@@ -45,23 +43,21 @@
 	  <div class="tab-content">
 	    <div id="home" class="tab-pane fade in active">
 	      <h3>Search Flights</h3>
-	      <br>
-	      	<form class="flights">
+	      	<form>
 			  <div class="form-group">
 			  	<div class="row">
-			  		<div class="col-md-3">
-			  			<input type="radio"> One Way
+			  		<div class="col-md-4">
+			  	<input type="radio"> One Way
 			  		</div>
-			  		<div class="col-md-3">
-			  			<input type="radio"> Roundtrip
+			  		<div class="col-md-4">
+			  	<input type="radio"> Roundtrip
 			  		</div>
-			  		<div class="col-md-3">
-			  			<input type="radio"> Multi City
+			  		<div class="col-md-4">
+			  	<input type="radio"> Multi City
 			  		</div>
 			  	</div>
-			  </div>
 			  	<br>
-			  <div class="form-group">
+			  	<br>
 			    <label>From</label>
 			    <input type="string" class="form-control" placeholder="Airport Name">
 			  </div>
@@ -132,7 +128,7 @@
 	      	<h3>Search Accommodations</h3>
 		  	 <form>
 			  <div class="form-group">
-			    <label>Going To</label>
+			    <label">Going To</label>
 			    <input type="string" class="form-control">
 			  </div>
 			  <div class="form-group">
@@ -167,6 +163,22 @@
 	  </div>
 	</div>
 	</div>
+
+<script type="text/javascript">
+	$(function () {
+	$('#datetimepicker6').datetimepicker({
+	});
+	$('#datetimepicker7').datetimepicker({
+	    useCurrent: false //Important! See issue #1075
+	});
+	$("#datetimepicker6").on("dp.change", function (e) {
+	    $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+	});
+	$("#datetimepicker7").on("dp.change", function (e) {
+	    $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+	});
+	});
+</script>
 </body>
 </html>
 <!-- <div class="col-lg-6">
