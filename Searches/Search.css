@@ -17,5 +17,21 @@ p{
 }
 
 .container{
-	margin-top: 150px;
+	margin-top: 100px;
 }
+
+.tab-content{
+
+}
+
+body {
+	font-family: 'Philosopher', sans-serif;
+}
+
+.flight {
+	margin-bottom: 10px;
+}
+
+/*body {
+	background-image: url("http://s1.favim.com/orig/140510/cute-fade-header-hipster-Favim.com-1744611.jpg")
+}*/
