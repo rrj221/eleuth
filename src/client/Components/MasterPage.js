@@ -1,22 +1,26 @@
 import React, {Component} from 'react';
+import {Grid, Row, Col} from "react-bootstrap";
 
-import styled, { css } from 'styled-component'
+ import styled from 'styled-components';
 
-const chunk = css`
-  color: #90EE90;
-  ${ props => props.background && 'background: #9783c8' }
-`
 
-const Div = styled.div`
-  ${ chunk }
-`
+const Wrapper = styled.h1`
+  background: papayawhip;
+  text-align: center;
+  font-size 1.5em;
+  color: palevioletred;
+`;
 
 export default class MasterPage extends Component {
   render() {
     return (
+      <Wrapper>
       <div id='MasterPage'>
+      
         MasterPage
+      
       </div>
+    </Wrapper>
     )
   }
 }

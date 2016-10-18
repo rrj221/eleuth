@@ -12,6 +12,9 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
+// this link said to run this to solve an issue.. https://github.com/Automattic/mongoose/issues/4291
+ mongoose.Promise = global.Promise;
+
 mongoose.connect('mongodb://localhost/tododb');
 
 const { connection } = mongoose;
