@@ -1,14 +1,23 @@
 import React, {Component} from 'react';
 import Price from './Price';
 
+import styled from 'styled-components';
+
+const Wrapper = styled.h5`
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+    color: white;
+`;
 
 export default class Prices extends Component {
   render() {
   	const { prices } = this.props;
   	console.log(prices);
     return (
+    <Wrapper>
+    Prices
       <div>
-        Prices
 		<ul className='list-group-item'>
 		  {
 			prices.map((agent) =>
@@ -23,6 +32,7 @@ export default class Prices extends Component {
 		</ul>
 
       </div>
+    </Wrapper>
     )
   }
 }

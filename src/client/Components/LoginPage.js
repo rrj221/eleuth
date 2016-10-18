@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Form from './Form';
 
 import {loginRequest} from '../actions';
+// import './styling/form.css';
 
 export default class LoginPage extends Component {
   render() {
