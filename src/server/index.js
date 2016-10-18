@@ -36,6 +36,14 @@ app.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname, '../../index.html'));
 });
 
+
+app.post('/api/skySearch', (req, res) => {
+	console.log('i would like to post');
+	console.log(req.body);
+});
+
+
+
 // get all todo items
 app.get('/api/items', (req, res) => {
 	TodoItem.find().exec((err, items) => {

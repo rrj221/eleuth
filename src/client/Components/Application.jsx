@@ -12,7 +12,8 @@ class Application extends Component {
 
 		// set initial state
 		this.state = {
-			items: []
+			items: [],
+			flights: []
 		};
 	}
 
