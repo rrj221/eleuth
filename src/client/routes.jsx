@@ -16,6 +16,8 @@ import CompletedPage from './Pages/CompletedPage';
 
 import FlightPage from './Components/FlightPage';
 
+// import Header from './Components/Header';
+
 export default (
 	/* This means the Application component 
 		is gonna be the parent of all components nested w/in this route! */

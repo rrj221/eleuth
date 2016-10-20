@@ -8,14 +8,14 @@ class IndexPage extends Component {
 
 		return (
 			<div>
-				<h1>Index Page</h1>
-				<TodoItemList
+				<h1>Eleuth</h1>
+				{/*<TodoItemList
 				  items={items} // pass down ALL items
 				  toggleCompleted={toggleCompleted} // pass Application's toggleCompleted as-is!
-			  />
+			  />*/}
 			</div>
 		);
-
+ 
 	}
 }
 

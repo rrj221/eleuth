@@ -1,7 +1,13 @@
 import React, {Component} from 'react';
 import Flight from './Flight';
 
+// import Header from './Header';
+
 import styled from 'styled-components';
+
+const styles = {
+
+};
 
 const Wrapper = styled.h1`
   padding: 4em;
@@ -39,10 +45,22 @@ export default class FlightPage extends Component {
       <div id='MasterPage'>
         Flights
 
+// This is copied from the newTodoItem page. 
+      <form onSubmit={this.handleSubmit.bind(this)}>
+        <input
+          onChange={this.handleChange.bind(this)}
+          value={this.state.text} // set input's value to be the value in our state
+          type="text"
+          placeholder="Search flight here"
+        />
+        <button>Search</button>
+      </form>
+
+
                     		{
                     			flights.map((flight) => 
                             <Wrapper>
-                            This is a single flight
+                            This is a single flight...
                     				<Flight
                             
                       					outboundInfo={flight.outboundInfo}
