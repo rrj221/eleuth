@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 
-class NewTodoItem extends Component {
+
+// this component is "dumb" as it has no state. really all its responsible
+// for is iterating over an array of items and rendering TodoItem for each
+// one
+class FlightSearch extends Component {
 	constructor(...args) {
 		// the spread operator (...) allows us to receive any number of arguments
 		// and pass them as-is to super w/out having to specify them individually
@@ -46,7 +50,7 @@ class NewTodoItem extends Component {
 					onChange={this.handleChange.bind(this)}
 					value={this.state.text} // set input's value to be the value in our state
 					type="text"
-					placeholder="Dummy search (was todo)"
+					placeholder="Hop to your destination"
 				/>
 				<button>Submit</button>
 			</form>
@@ -54,4 +58,4 @@ class NewTodoItem extends Component {
 	}
 }
 
-export default NewTodoItem;
+export default FlightSearch;

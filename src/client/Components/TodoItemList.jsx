@@ -6,31 +6,30 @@ import TodoItem from './TodoItem';
 // one
 class TodoItemList extends Component {
 
-	render() {
-		const { items, toggleCompleted } = this.props;
+  render() {
+    const { items, toggleCompleted } = this.props;
 
-		return (
-			<ul className="TodoItemList">
-				{
-					// .map example:
-					// [1, 2, 3].map((number) => number * 2)
-					// will return [2, 4, 6]
-
-					// .map just iterates over all of our items and returns a rendered
-					// .TodoItem for each item
-					items.map((item, index) =>
-						<TodoItem
-							toggleCompleted={toggleCompleted}
-							isCompleted={item.isCompleted}
-							text={item.text}
-							id={item._id}
-							key={index} // react wants a unique key on each element in a list so we just give it the index
-						/>
-					)
-				}
-			</ul>
-		);
-	}
+    return (
+      <ul className="TodoItemList">
+        {
+          // .map example:
+          // [1, 2, 3].map((number) => number * 2)
+          // will return [2, 4, 6]
+          // .map just iterates over all of our items and returns a rendered
+          // .TodoItem for each item
+          items.map((item, index) =>
+            <TodoItem
+              toggleCompleted={toggleCompleted}
+              isCompleted={item.isCompleted}
+              text={item.text}
+              id={item._id}
+              key={index} // react wants a unique key on each element in a list so we just give it the index
+            />
+          )
+        }
+      </ul>
+    );
+  }
 }
 
 export default TodoItemList;
